@@ -4,6 +4,5 @@
 
 <a name="license"></a>
 
-# License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+### License
+GPL-3.0-or-later

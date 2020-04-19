@@ -24,7 +24,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-netlify`,
 	`gatsby-plugin-react-helmet`,
-	`gatsby-plugin-sass`,
     {
       //the name of the plugin
       resolve: "@agility/gatsby-source-agilitycms",
@@ -55,7 +54,16 @@ module.exports = {
          //the page template that will be used to render Agility CMS pages
         masterPageTemplate: "./src/AgilityPage.js"
       },
-    },
+	},
+	{
+		resolve: `gatsby-plugin-sass`,
+		options: {
+		  postCssPlugins: [
+			require("tailwindcss"),
+			require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+		  ],
+		},
+	  },
 
   ],
 }
