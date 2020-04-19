@@ -1,3 +1,6 @@
+
+## JoelVarty(dot)com
+
 <p align="center">
   <a href="https://gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" height="60" />
@@ -22,10 +25,10 @@ This site uses the [Agility CMS Gatsby Source Plugin](https://github.com/agility
 
 Our source plugin with Gatsby will only refresh content that has changed since your last build, so you can rest easy your builds will be fast, regardless of how many pages you have.
 
-**Preview Site** (Gatsby Cloud): 
+**Preview Site** (Gatsby Cloud):
 https://agility-gatsby-starter-5854363761.gtsb.io/
 
-**Production Site** (Netlify): 
+**Production Site** (Netlify):
 https://agility-gatsby-starter-gatsbycloud.netlify.com/
 
 
@@ -179,7 +182,7 @@ You'll want to take a peek under the hood at some point and take the starter's c
 
 [Agility CMS](https://agilitycms.com/) is a headless Content Management System (CMS) that lets you define your custom content types, relationships and pages. This is called Content Architecture, and you can reuse this content for your websites and apps.
 
-Agility believes that a successful website balances the **User Experience (UX)**, **Editor Experience (EX)**, and **Developer Experience (DX)**. 
+Agility believes that a successful website balances the **User Experience (UX)**, **Editor Experience (EX)**, and **Developer Experience (DX)**.
 
 While Gatsby tends to handle **UX** and **DX** quite well, too often editors are an after-thought in Gatsby (and other JAMstack) websites. They feel constrained by not being able to manage their sitemap and what content is on which pages.
 

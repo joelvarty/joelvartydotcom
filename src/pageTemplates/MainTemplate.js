@@ -4,7 +4,7 @@ import ContentZone from '../agility/components/ContentZone'
 const OneColumnTemplate = (props) => {
     return (
         <div className="one-column-template">
-            <ContentZone name="MainContentZone" {...props} />
+            <ContentZone name="Main" {...props} />
         </div>
     );
 }

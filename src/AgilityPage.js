@@ -5,9 +5,9 @@ import AgilityPageTemplate from './agility/components/AgilityPageTemplate'
 //Some things we need for our layout
 import LayoutTemplate from "./components/LayoutTemplate"
 import PreviewBar from "./components/PreviewBar"
-import GlobalHeader from './components/GlobalHeader'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import SEO from './components/SEO'
-
 
 //Our query to get the our page data and check for a dynamic page item (agilityItem)
 export const query = graphql`
@@ -27,10 +27,12 @@ const AgilityPage = ({ pageContext, data }) => {
         <LayoutTemplate>
             <SEO title={viewModel.page.title} description={viewModel.page.seo.metaDescription} />
             <PreviewBar isPreview={viewModel.isPreview} />
-            <GlobalHeader />
+            <Header />
             <main className="main">
                 <AgilityPageTemplate {...viewModel} />
             </main>
+            <Footer />
+
         </LayoutTemplate>
     );
 }

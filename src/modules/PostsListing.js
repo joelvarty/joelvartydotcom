@@ -20,17 +20,10 @@ export default (props) => (
                     contentID
                     customFields {
                         title
-                        details
-                        imageLocalImg {
-                            childImageSharp {
-                                fluid(quality: 90, maxWidth: 480, maxHeight: 350) {
-                                  ...GatsbyImageSharpFluid
-                                }
-                              }
+                        excerpt
+                        image {
+                            url
                         }
-                    }
-                    sitemapNode {
-                        pagePath
                     }
                     properties {
                         referenceName
@@ -67,7 +60,7 @@ const Posts = ({ posts }) => {
 }
 
 const Post = ({ post }) => {
-    
+
     if(!post.sitemapNode) return;
     return(
         <div className="post" key={post.contentID}>
@@ -82,10 +75,10 @@ const Post = ({ post }) => {
 
 const PostImage = ({ image, label }) => {
     let imageToRender = null;
-    
+
     if(image && image.childImageSharp) {
 
-        imageToRender = <Img fluid={image.childImageSharp.fluid} alt={label} /> 
+        imageToRender = <Img fluid={image.childImageSharp.fluid} alt={label} />
     }
     return imageToRender;
 }
