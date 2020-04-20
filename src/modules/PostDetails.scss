@@ -1,0 +1,34 @@
+.post-details {
+	margin-top:100px;
+	h1 {
+		@apply text-2xl;
+	  }
+
+	  h2 {
+		@apply text-xl;
+	  }
+	  h3 {
+		@apply text-lg;
+	  }
+	  a {
+		@apply underline;
+	  }
+	  p {
+		@apply text-base mt-4 mb-4;
+	  }
+
+	  blockquote {
+		@apply border-l-4 border-teal-500 italic my-8 pl-8 ; //md:pl-12;
+	  }
+	  code {
+		  @apply break-words whitespace-pre-wrap;
+	  }
+
+	  pre {
+		  @apply bg-gray-900 rounded text-white font-mono text-base p-4;
+	  }
+	  li {
+		  @apply py-3;
+	  }
+
+}

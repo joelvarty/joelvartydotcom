@@ -22,7 +22,7 @@ export const query = graphql`
 }
 `
 const AgilityPage = ({ pageContext, data }) => {
-    const viewModel = agilityUtils.buildPageViewModel({ pageContext, data });
+	const viewModel = agilityUtils.buildPageViewModel({ pageContext, data });
     return (
         <LayoutTemplate>
             <SEO title={viewModel.page.title} description={viewModel.page.seo.metaDescription} />
